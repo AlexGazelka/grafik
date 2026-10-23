@@ -79,7 +79,11 @@ input,select{width:100%;font:inherit;color:var(--tx);background:var(--bg);border
 </details>
 </div>
 <script>
-var CFG={SUPABASE_URL:'https://zybynztbyxhykgejdwzl.supabase.co',SUPABASE_KEY:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5YnluenRieXhoeWtnZWpkd3psIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI2NjQ5OTIsImV4cCI6MjEwODI0MDk5Mn0.Zj50jnopp-cOUkmdEEcFKz9br7DYg91CHUvpZb4SrZ8',BOT:'GrafikGazelFrendikiBOT',APP:''};
+var CFG={SUPABASE_URL:'https://zybynztbyxhykgejdwzl.supabase.co',   // например https://abcd1234.supabase.co
+  SUPABASE_KEY:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5YnluenRieXhoeWtnZWpkd3psIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI2NjQ5OTIsImV4cCI6MjEwODI0MDk5Mn0.Zj50jnopp-cOUkmdEEcFKz9br7DYg91CHUvpZb4SrZ8',  // anon public key
+  BOT:'GrafikGazelFrendikiBOT',            // имя бота без @, например my_grafik_bot
+  APP:'Grafik',             // короткое имя мини-приложения из BotFather (/newapp)};
+        }
 var tg=window.Telegram&&Telegram.WebApp;
 if(tg){tg.ready();tg.expand();if(tg.colorScheme)document.documentElement.setAttribute('data-theme',tg.colorScheme)}
 function svg(b,f){return '<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+b+'</svg>'}
